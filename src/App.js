@@ -42,7 +42,7 @@ function App() {
                   >
                     <ul className="navbar-nav meauto mb-2 mb-lg-0">
                       <li className="nav-item">
-                        <Link to="/" className="nav-link">
+                        <Link index to="/" className="nav-link">
                           Home
                         </Link>
                       </li>

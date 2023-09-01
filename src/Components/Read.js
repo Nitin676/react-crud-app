@@ -17,7 +17,7 @@ const Read = () => {
     axios
       .get(`https://64f0dc548a8b66ecf77a2f9d.mockapi.io/crud-youtube`)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setData(res.data);
       });
   }
