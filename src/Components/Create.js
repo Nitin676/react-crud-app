@@ -21,6 +21,13 @@ function Create() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Submit Clicked!");
+
+    // Validation: Check if name and email are not empty
+    if (!name.trim() || !email.trim()) {
+      alert("Fields cannot be empty");
+      return;
+    }
+    
     axios
       .post("https://64f0dc548a8b66ecf77a2f9d.mockapi.io/crud-youtube", {
         name: name,
